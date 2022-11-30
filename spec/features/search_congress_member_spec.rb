@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Govt Search' do
   describe 'happy path' do
-    it 'allows user to search for govt members' do
+    xit 'allows user to search for govt members' do
       visit root_path
 
       fill_in :search, with: 'Sanders'
@@ -13,7 +13,7 @@ RSpec.describe 'Govt Search' do
       expect(page).to have_content("SenSanders")
     end
 
-    it 'allows user to search for another govt member' do
+    xit 'allows user to search for another govt member' do
       visit root_path
 
       fill_in :search, with: 'Booker'
